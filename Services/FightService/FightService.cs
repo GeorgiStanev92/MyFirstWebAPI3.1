@@ -162,7 +162,7 @@ namespace dotnet_rpg.Services.FightService
                         {
                             int randomSkill = new Random().Next(attacker.CharacterSkill.Count);
                             attackUsed = attacker.CharacterSkill[randomSkill].Skill.Name;
-                            damage=DoSkillDamage(attacker,opponent,attacker.CharacterSkill[randomSkill])
+                            damage = DoSkillDamage(attacker, opponent, attacker.CharacterSkill[randomSkill]);
                         }
                         response.Data.Log.Add($"{attacker.Name} attacks {opponent.Name} using {attackUsed} with " +
                             $"{(damage >= 0 ? damage : 0)} damage.");
