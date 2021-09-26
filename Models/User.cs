@@ -16,7 +16,7 @@ namespace dotnet_rpg.Models
 
         public List<Character> Characters { get; set; }
 
-        //
+        // adding role for users 
         [Required]
         public string Role { get; set; }
     }
