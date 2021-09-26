@@ -11,7 +11,8 @@ using System.Threading.Tasks;
 
 namespace dotnet_rpg.Controllers
 {
-    [Authorize]
+    // only users with role status Players and Admins can log and use controllers
+    [Authorize(Roles = "Player,Admin")]
     [ApiController]
     [Route("[controller]")]
     public class CharacterController : ControllerBase
