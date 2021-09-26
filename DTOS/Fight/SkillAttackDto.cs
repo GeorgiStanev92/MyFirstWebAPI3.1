@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace dotnet_rpg.DTOS.Fight
+{
+    public class SkillAttackDto
+    {
+        public int AttackerId { get; set; }
+        public int OpponenId { get; set; }
+        public int SkillId { get; set; }
+    }
+}
